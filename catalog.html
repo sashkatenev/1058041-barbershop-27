@@ -18,9 +18,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul>
-          <li>
-             <button type="button">Вход</button>
-           </li>
+          <li><a href="#">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +36,64 @@
 
       <section>
         <h2>Фильтр товаров</h2>
-        <!-- Здесь будет форма фильтрации -->
+        <form method="get" action="#">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <p>
+                  <label><input type="checkbox" name="baxter_of_cal" checked>Baxter of California</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="checkbox" name="mr_natty">Mr Natty</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="checkbox" name="suavecito" checked>Suavecito</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="checkbox" name="malin_goetz">Malin+Goetz</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="checkbox" name="murrays">Murray's</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="checkbox" name="american_crew" checked>American Crew</label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <ul>
+              <li>
+                <p>
+                  <label><input type="radio" name="product_group" value="1">Бритвенные принадлежности</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="radio" name="product_group" value="2" checked>Средства для ухода</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <label><input type="radio" name="product_group" value="3">Аксессуары</label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="button">Показать</button>
+        </form>
       </section>
 
       <section>
