@@ -129,9 +129,24 @@
 
     <section>
       <h2>Личный кабинет</h2>
-      <p>Введите пожалуйства свой логин и пароль</p>
-      <!-- Здесь форма авторизации -->
-
+      <p>Введите пожалуйства свои логин и пароль</p>
+      <form method="post" action="#">
+        <p>
+          <label for="login">Логин</label>
+          <input type="text" id="login" name="login" value="login">
+        </p>
+        <p>
+          <label for="password">Логин</label>
+          <input type="password" id="password" name="password" value="123456">
+        </p>
+        <p>
+          <label><input type="checkbox" name="rememver" checked>Запомните меня</label>
+        </p>
+        <p>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
 
